@@ -174,7 +174,7 @@ def scan_finger():
 			return requests.post(reqUrl, req_params)
 
 			# get response
-		response = sendPostRequest(URL, 'F6XIQDHSXOVGNVYF54BIHTZ8H6KK0EZ9', 'LTH85DZI8XGSGUY5', 'stage', session['mobile'], 'WAYSMS', 'your otp of atm access is '+otp)
+		response = sendPostRequest(URL, '', '', 'stage', session['mobile'], 'WAYSMS', 'your otp of atm access is '+otp)
 		print response.text
 		return redirect(url_for('verify'))
 	else:
@@ -235,7 +235,7 @@ def withdraw():
 
 		# get response
 		message = "your account has been debiated with amount "+amount + " on " +date + " availabel balance in your account is "+str(real_amount)
-		response = sendPostRequest(URL, 'F6XIQDHSXOVGNVYF54BIHTZ8H6KK0EZ9', 'LTH85DZI8XGSGUY5', 'stage', session['mobile'], 'WAYSMS', message)
+		response = sendPostRequest(URL, '', '', 'stage', session['mobile'], 'WAYSMS', message)
 		print response.text
 		message = "your account has been debiated with amount "+amount + " on " +date + " availabel balance in your account is "+str(real_amount)
 		print(message)
