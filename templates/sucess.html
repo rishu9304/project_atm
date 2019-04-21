@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sucesss</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	a {
+  		display: block;
+  		margin: 3px;
+  		width: 300px;
+  	}
+ .center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 150px;
+  bottom: 0;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+}
+  </style>
+</head>
+<body class="center-div">
+<div>
+<div class="container-fluid col-xs-4 col-xs-offset-4 center-div">
+<a href="{{url_for('withdraw')}}" class="btn btn-info">Money withdraw</a><br>
+<a href="{{url_for('view_balance')}}" class="btn btn-info">View Balance</a><br>
+<a href="{{url_for('statement')}}" class="btn btn-info">Mini Statement</a>
+<div>
+	<script type="text/javascript">   
+   if (window.performance) {
+  console.info("window.performance works fine on this browser");
+}
+  if (performance.navigation.type == 1) {
+    
+    function Redirect() 
+    {  
+        window.location="/redirect"; 
+    } 
+    Redirect()
+   }
+
+	if(performance.navigation.type==2){
+		function redirect(){
+		window.location="/redirect";
+		}
+	redirect()
+	}
+    function Redirect() 
+    {  
+        window.location="/redirect"; 
+    } 
+    setTimeout('Redirect()', 30000);
+</script>
+</div>
+</body>
+</html>

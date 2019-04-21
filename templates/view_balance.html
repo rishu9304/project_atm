@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>balance</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+  		background-color: #33ACFF;
+  	}
+  </style>
+</head>
+<body>
+<div class="container-fluid col-xs-4 col-xs-offset-4">
+<h3>current balance in your account is {{balance}}</h3>
+</div>
+<script type="text/javascript">   
+    function Redirect() 
+    {  
+        window.location="/redirect"; 
+    } 
+    setTimeout('Redirect()', 5000);
+
+	if(performance.navigation.type==2){
+		function redirect(){
+			console.log("home page")
+			window.location="/redirect";
+		}
+	redirect()
+	}
+
+	if(performance.navigation.type==1){
+		function redirect(){
+			console.log("home page")
+			window.location="/redirect";
+		}
+	redirect()
+	}
+   
+</script>
+</body>
+</html>

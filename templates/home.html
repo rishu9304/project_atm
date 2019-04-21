@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to the atm machine</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+.div_col {
+	background-color: #337DFF;
+	padding: 5px;
+	border: 2px black;
+}
+body {
+	background-color: #33FF39;
+}
+h3{
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div class = "div_col container-fluid col-xs-4 col-xs-offset-4"> 
+<h3>Scan your finger to continue</h3>
+<a href="{{url_for('scan_finger')}}" class="btn btn-info col-xs-4 col-xs-offset-4">Scan our finger</a>
+<div>
+	<script type="text/javascript">
+			if(performance.navigation.type==2){
+		function redirect(){
+			console.log("home page")
+			window.location="/redirect";
+		}
+	redirect()
+	}
+	</script>
+</body>
+</html>
